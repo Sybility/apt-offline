@@ -1973,7 +1973,7 @@ def installer( args ):
             log.verbose( "Great!!! No bugs found for all the packages that were downloaded.\n\n" )
 
             FileList = []
-            tempDir = tempfile.mkdtemp()
+            tempDir = "/home/pilot/tmp/"#tempfile.mkdtemp()
             InstallerInstance.magicMIME.load()
             for filename in zipBugFile.namelist():
                 #INFO: Take care of Src Pkgs
